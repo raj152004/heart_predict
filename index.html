@@ -13,10 +13,17 @@
             <h1>❤️‍🔥 Heart Disease Prediction ❤️‍🔥</h1>
         </marquee>
         <form id="predictionForm">
+
             <div class="form-group">
-                <label>NAME❤️</label>
+                <label>YOUR NAME❤️</label>
                 <input type="NAME" name="Name" placeholder="" required>
                 <small>Enter your full name</small>
+            </div>
+
+            <div class="form-group">
+                <label>AGE🧓</label>
+                <input type="number" name="age" placeholder="e.g. 45" required>
+                <small>Enter your age in years</small>
             </div>
 
             <div class="form-group">
@@ -26,32 +33,32 @@
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
-                <small>Select your correct gender</small>
+                <small>Heart disease risks can vary by gender</small>
             </div>
 
             <div class="form-group">
-                <label>YOUR-AGE🧓</label>
-                <input type="number" name="age" placeholder="e.g. 45" required>
-                <small>Enter your age in years</small>
+                <label>CHOLESTROL (mg/dL)🩸</label>
+                <input type="number" name="chol" placeholder="e.g. 180" required>
+                <small>Normal: 125–200 | High: >240</small>
             </div>
 
             <div class="form-group">
-                <label>Resting BP (BLOOD-PRESSURE)💉</label>
+                <label>RESTING BP💉</label>
                 <input type="number" name="bp" placeholder="e.g. 120" required>
                 <small>Normal: 90/60 – 120/80 | High: >140</small>
             </div>
 
             <div class="form-group">
-                <label>Max Heart Rate (bpm)❤️‍🔥</label>
+                <label>MAX HEART RATE❤️‍🔥</label>
                 <input type="number" name="hr" placeholder="e.g. 150" required>
-                <small>Expected: 220</small>
+                <small>Expected: 220 - Age</small>
             </div>
 
-            <button type="submit">Predict Risk🔍</button>
+            <button type="submit">🔍 Predict Risk</button>
         </form>
         <div id="result"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="heart.js"></script>
 </body>
 
 </html>

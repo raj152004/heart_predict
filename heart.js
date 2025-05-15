@@ -1,9 +1,9 @@
 document.getElementById("predictionForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const Name = parseInt(document.querySelector('[name="Name"]').value);
-    const gender = document.querySelector('[name="gender"]').value;
     const age = parseInt(document.querySelector('[name="age"]').value);
+    const gender = document.querySelector('[name="gender"]').value;
+    const chol = parseInt(document.querySelector('[name="chol"]').value);
     const bp = parseInt(document.querySelector('[name="bp"]').value);
     const hr = parseInt(document.querySelector('[name="hr"]').value);
 
